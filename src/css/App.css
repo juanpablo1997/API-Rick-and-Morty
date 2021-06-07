@@ -1,0 +1,252 @@
+/*
+    *  CSS para el sitio www.RickandMorty.com
+    *  Importaciones
+    *  Autor: Juan Pablo Orozco
+*/
+
+@font-face {
+  font-family: shlop;
+  src: url('../fonts/shlop\ rg.ttf');
+}
+
+/*
+    *  CSS para el sitio www.RickandMorty.com 
+    *  Estilos css para componente <App/>
+    *  Autor: Juan Pablo Orozco
+*/
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.Lista-objetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+/*
+    *  CSS para el sitio www.RickandMorty.com/ App 
+    *  Estilos css para tags generales
+    *  Autor: Juan Pablo Orozco
+*/
+
+p {
+  margin: 0;
+}
+
+img {
+  border-radius: 8px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+a:visited {
+  color: #F39C12;
+}
+
+/*
+    *  CSS para el sitio www.RickandMorty.com/ App 
+    *  Estilos css para componente <Header/>
+    *  Autor: Juan Pablo Orozco
+*/
+
+.header {
+  height: 300px;
+  background: #F2F3F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header .subTitulo {
+  text-shadow: 1px 1px 3px #216922;
+  color: #8BCF21;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 45px;
+  font-family: shlop;
+  display:inline-block;
+  width: 280px;
+  text-align: center;
+}
+
+.header .subTitulo:hover {
+  transform:scale(1.2);
+}
+
+.Lista-objetos {
+  padding: 0px;
+}
+
+.nav {
+  height: 60px;
+  background-color: #F2F3F4;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1.5px #cecdcd;
+  padding: 10px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+}
+
+.header .nav a {
+  display: flex;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header .nav a:hover {
+  opacity: 0.5;
+}
+
+.header .nav ul {
+  display: flex;
+  margin-right: 15px;
+}
+
+.header nav ul li {
+  list-style: none;
+  margin: 0px 15px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header nav ul li:hover {
+  color: #F39C12;
+}
+
+.header nav ul .buscar-personaje {
+  border: 1px solid #F39C12;
+  border-radius: 8px;
+}
+
+.header nav ul .buscar-personaje:hover {
+  background-color: #F39C12;
+  color: #fff;
+}
+
+.header .titulo {
+  color: #31302E;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 40px;
+}
+
+/*
+    *  CSS para el sitio www.RickandMorty.com
+    *  Estilos css para componente <Tarjeta/>
+    *  Autor: Juan Pablo Orozco
+*/ 
+
+.Card {
+  background-color: #F2F3F4;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  opacity: 0.9;
+  text-align: center;
+  width: 200px;
+}
+
+.Card:hover {
+  opacity: 1;
+  transform:translateY(-10px);
+}
+
+.Card .nombre-card {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Card .nombre-card:hover {
+  color: #F39C12;
+}
+
+.Card .info-card {
+  font-size: 15px;
+}
+
+.Card label {
+  color: #424949;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.info-card {
+  color: #000;
+  font-weight: bolder;
+  text-align: left;
+}
+
+/*
+    *  CSS para el sitio www.RickandMorty.com
+    *  Estilos css para componente <Footer/>
+    *  Autor: Juan Pablo Orozco
+*/ 
+
+.contenedor-footer {
+  background-color: #202329;
+  padding: 50px;
+  user-select: none;
+}
+
+.contenedor-footer p, a {
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.contenedor-footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contenedor-footer p .nombre {
+  text-decoration: underline #F39C12 0.5px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.contenedor-footer p .nombre:hover {
+  text-decoration: none;
+  color: #F39C12;
+}
+
+.contenedor-footer .hecho {
+  margin-top: 20px;
+}
+
+.contenedor-footer p .por {
+  font-weight: lighter;
+  color: #9E9E9E;
+  margin-right: 10px;
+}
+
+.contenedor-footer p .year {
+  font-weight: lighter;
+  color: #9E9E9E;
+  margin-left: 10px;
+}
